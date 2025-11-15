@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(image/bg2.jpg);
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-image: url(image/bg3.jpg);
+    background-size: cover;
+    color: #F0F0F0;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 標楷體;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+nav {
+    background-color: #A3C4F3;
+    text-align: center;
+}
+
+nav a {
+    padding: 20px;
+    display: inline-block;
+    font-family: 標楷體;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a:hover {
+    background-color: #6B8EFB;
+    color: white;
+}
+
+main {
+    max-width: 1500px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-image: url(image/bg1.jpg);
+    background-size: cover;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    gap: 20px;
+}
+
+/* 合併 .card h2 和 .card h3.slogan 的共同屬性 */
+.card h2,
+.card h3.slogan {
+    width: 100%;
+    text-align: center;
+    font-family: 標楷體;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #3B4CCA;
+}
+
+.card h3.slogan {
+    margin-bottom: 20px;
+    color: #4A69BD;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+/* 圖片樣式 */
+.card img.size1 {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 3px solid #3B4CCA;
+}
+
+.card img.size2 {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.card img.size3 {
+    max-width: 100px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+#contact img.size3:hover {
+    transform: translateY(-5px) scale(1.1);
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+.card img.size4 {
+    width: 100%;
+    max-width: 600px;
+    height: auto; 
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.card img.size4:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+.card p {
+    flex: 1;
+    font-size: 20px;
+    font-family: 標楷體;
+    text-align: center;
+}
+
+
+.card.project {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card.project a {
+    align-self: center; 
+    margin: 15px 0;
+}
+
+
+.card1 {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center; 
+    padding: 15px;
+    
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+.card1:hover {
+    transform: scale(1.03); 
+    cursor: pointer;
+    background-color: #6B8EFB;
+}
+
+.card1:hover p,
+.card1:hover h3 {
+    color: white;
+}
+
+
+.ws {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 5px 0 10px 0; /* 合併 margin-top 和 margin-bottom */
+}
+
+.card1 h3 {
+    font-size: 20px;
+    color: #444;
+    font-family: 標楷體; 
+    font-weight: bold;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+footer {
+    background-image: url(image/bg3.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+/* 合併 .format1 和 .format2 的 text-align 屬性 */
+.format1, .format2 {
+    text-align: center;
+}
+
+.format1 {
+    font-size: 25px;
+    font-family: 標楷體;
+}
+
+.format2 {
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.tbformat {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.tbformat th,
+.tbformat td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.skill-block {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* 合併 .skill-block h3 和 .card h2 的部分共同屬性 */
+.skill-block h3 {
+    width: 100%;
+    text-align: center;
+    color: #3B4CCA; 
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 標楷體;
+}
+
+#major .tbformat {
+    border: 3px solid #3B4CCA;
+}
+
+#major .tbformat thead th {
+    background-color: #3B4CCA;
+    color: white;
+    font-weight: bold;
+}
+
+#major .tbformat tbody td {
+    background-color: rgba(255, 255, 255, 0.8);
+}
